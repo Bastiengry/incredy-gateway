@@ -1,3 +1,9 @@
+server:
+  port: 443
+  ssl:
+    bundle: incredy-gateway
+    enabled-protocols: TLSv1.3
+
 spring:
   application:
     name: gateway
@@ -14,19 +20,13 @@ spring:
   ssl:
     bundle:
       jks:
-        server:
+        incredy-gateway:
           key:
-            alias: springboot
+            alias: incredy-gateway
           keystore:
-            location: classpath:keystore/springboot.p12
+            location: classpath:incredy-gateway-keystore.p12
             type: PKCS12
             password: password
-
-server:
-  port: 8443
-  ssl:
-    bundle: server
-    enabled-protocols: TLSv1.3
   
 eureka:
   client:
