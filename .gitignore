@@ -33,3 +33,8 @@ build/
 .vscode/
 
 logs/
+
+src/main/resources/curl-incredy-truststore.p12
+src/main/resources/incredy-gateway-keystore.p12
+src/main/resources/incredy-gateway.crt.pem
+src/main/resources/incredy-gateway.key.pem
